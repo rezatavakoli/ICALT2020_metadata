@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 # %% load the OERs file
-df = pd.read_csv("sample_oers.csv", encoding = 'utf-8')
+df = pd.read_csv("Data-set.csv", encoding = 'utf-8')
 
 # %% add some features
 df["title_length"] = df["title"].apply(lambda x: x.count(" ") + 1)
